@@ -12,7 +12,7 @@ public class Passenger {
     }
 
     public String getPassengerInfo() {
-        return "Пасажир: " + name + ", паспорт: " + passport + ", місце: " + seat;
+        return "Passenger info: " + name + " | Passport: " + passport + " | Seat: " + seat;
     }
 
     public void setSeat(String seat) {
