@@ -20,18 +20,19 @@ public class Flight implements IFlight {
 
     @Override
     public String getFlightInfo() {
-        return "Рейс №" + flightNumber + " до " + destination + " (виліт о " + departureTime + ")";
+        // Тест очікує, що цей текст містить статус (On Time) без українських фраз
+        return "Flight " + flightNumber + " to " + destination + " (departure at " + departureTime + "), Status: " + status;
     }
 
     @Override
     public String getSchedule() {
-        return "Розклад: " + departureTime;
+        // Короткий варіант, бо тести очікують тільки час
+        return departureTime;
     }
 
-    
     @Override
     public String getStatus() {
-        return "Поточний статус рейсу: " + status;
+        // Повертаємо тільки сам статус
+        return status;
     }
-
 }
