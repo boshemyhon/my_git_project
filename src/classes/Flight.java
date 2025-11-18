@@ -31,7 +31,7 @@ public class Flight implements IFlight {
     
     @Override
     public String getStatus() {
-        return "Поточний статус рейсу: " + status;
+        return "Поточний статус рейсу укріїнською: " + status;
     }
 
 }
