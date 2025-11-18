@@ -35,4 +35,9 @@ public class Flight implements IFlight {
         // Повертаємо тільки сам статус
         return status;
     }
+    public void updateStatus(String status) {
+        this.status = status;
+        System.out.println("Flight status updated to: " + status);
+    }
+
 }
