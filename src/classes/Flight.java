@@ -28,8 +28,10 @@ public class Flight implements IFlight {
         return "Розклад: " + departureTime;
     }
 
+    
     @Override
     public String getStatus() {
-        return "Статус: " + status;
+        return "Поточний статус рейсу: " + status;
     }
+
 }
